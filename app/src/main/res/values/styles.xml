@@ -1,0 +1,11 @@
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base"> </style>
+
+    <style name="AppTheme.Base" parent="Theme.AppCompat.Light">
+        <item name="colorPrimary">@color/primaryColor</item>
+        <item name="colorPrimaryDark">@color/notificationBarColor</item>
+        <item name="colorAccent">@color/accentColour</item>
+    </style>
+
+</resources>

@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Notebook</string>
+
+    <string name="hello_world">I an Mister Exclusive.</string>
+    <string name="action_settings">About</string>
+    <string name="title_activity_about">About</string>
+    <string name="title_activity_add_activiy">Add a note</string>
+    <string name="hint_etTitle">Title</string>
+    <string name="hint_etMain">Write your note here.</string>
+    <string name="title_activity_note_viewer">Notes</string>
+    <string name="title_activity_update">Notebook</string>
+    <string-array name="cameraChoices">
+        <item>Take Picture</item>
+        <item>Choose Picture</item>
+    </string-array>
+
+</resources>

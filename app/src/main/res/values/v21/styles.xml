@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:colorPrimary">@color/primaryColor</item>
+        <item name="android:colorPrimaryDark">@color/notificationBarColor</item>
+        <item name="android:colorAccent">@color/accentColour</item>
+        <item name="android:navigationBarColor">@color/navC</item>
+    </style>
+</resources>

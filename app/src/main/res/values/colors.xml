@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="primaryColor">#03A9F4</color>
+    <color name="notificationBarColor">#0288D1</color>
+    <color name="accentColour">#9C27B0</color>
+    <color name="navC">#0288D1</color>
+    <color name="foc">#81D4FA</color>
+    <color name="pre">#B3E5FC</color>
+    <color name="nor">#F5F5F5</color>
+</resources>

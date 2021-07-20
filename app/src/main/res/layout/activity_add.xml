@@ -1,0 +1,79 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.mr_exclusive.notebook.AddActiviy">
+
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_below="@+id/relativeLayout2">
+
+        <EditText
+            android:id="@+id/etMain"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="top"
+            android:hint="@string/hint_etMain"
+            android:inputType="textMultiLine" />
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/scrollView2"
+        android:layout_alignRight="@+id/relativeLayout2"
+        android:layout_alignEnd="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_above="@+id/relativeLayout2">
+
+        <EditText
+            android:id="@+id/etTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/hint_etTitle" />
+    </ScrollView>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativeLayout2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/space3">
+
+    </RelativeLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20px"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="57dp"
+        android:id="@+id/space3" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bf"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/accentColour"
+        android:onClick="save"
+        android:src="@drawable/ic_save"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

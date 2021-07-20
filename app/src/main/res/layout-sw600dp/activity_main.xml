@@ -1,0 +1,142 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/nor"
+    tools:context=".MainActivity">
+
+    <Space
+        android:layout_width="10dp"
+        android:layout_height="20dp"
+        android:layout_alignParentTop="true"
+        android:background="@color/accentColour"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/space" />
+
+    <RelativeLayout
+        xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:id="@+id/rlui"
+        android:layout_height="match_parent"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_toEndOf="@+id/relativeLayout"
+        android:layout_toRightOf="@+id/relativeLayout">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_margin="2dp"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:id="@+id/textView5"
+            android:textSize="20sp"
+            android:layout_margin="2dp"
+            android:textColor="@android:color/black"
+            android:layout_alignBottom="@+id/buttonFloat"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_toLeftOf="@+id/buttonFloat"
+            android:layout_toStartOf="@+id/buttonFloat" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_above="@+id/textView5"
+            android:id="@+id/scrollView3"
+            android:layout_below="@+id/linearLayout">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:id="@+id/textView6"
+                android:layout_margin="2dp"
+                android:textColor="@android:color/black"
+                android:textSize="20sp" />
+        </ScrollView>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:id="@+id/textView3"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/buttonFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/accentColour"
+            android:onClick="update"
+            android:src="@drawable/ic_save" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:id="@+id/linearLayout">
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/space"
+        android:layout_toStartOf="@+id/space"
+        android:id="@+id/relativeLayout">
+
+        <ListView
+            android:id="@id/listView"
+            android:background="@color/nor"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true" />
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@id/buttonFloat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/accentColour"
+            android:onClick="add"
+            android:src="@drawable/ic_action_new"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true" />
+
+    </RelativeLayout>
+</RelativeLayout>
